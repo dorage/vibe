@@ -1,9 +1,7 @@
-import { Button } from "@/shared/ui/button";
-import { useCounterStore } from "@/utilites/counter-store";
+import { Button } from "@/components/Button";
+import { useCounterStore } from "@/hooks/useCounterStore";
 
-interface CounterViewProps {}
-
-export const CounterView = (props: CounterViewProps) => {
+export const CounterView = () => {
   const count = useCounterStore((state) => state.count);
   const increase = useCounterStore((state) => state.increase);
   const decrease = useCounterStore((state) => state.decrease);

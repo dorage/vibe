@@ -1,13 +1,11 @@
-import { CounterStoreProvider } from "@/utilites/counter-store";
-import { CounterView } from "@/widgets/counter";
+import { CounterStoreProvider } from "@/stores/counter";
+import { CounterView } from "@/components/Counter";
 
-interface MainpageProps {}
-
-const MainPage = (props: MainpageProps) => {
+const MainPage = () => {
   return (
     <main>
       <h1 className="text-center text-2xl font-bold">
-        React Capactior Boilerplate
+        One Page App
       </h1>
       <div>
         <CounterStoreProvider>

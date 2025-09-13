@@ -1,7 +1,7 @@
 import { use } from "react";
-import { context } from "./context";
+import { context } from "@/stores/counter/context";
 import { useStore } from "zustand";
-import { CounterState } from "./type";
+import { CounterState } from "@/stores/counter/type";
 
 export const useCounterStore = <T>(selector: (state: CounterState) => T) => {
   const store = use(context);

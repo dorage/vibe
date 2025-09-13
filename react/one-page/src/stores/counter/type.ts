@@ -1,4 +1,4 @@
-import { StoreApi, UseBoundStore } from "zustand";
+import { StoreApi } from "zustand";
 
 export type CounterState = {
   count: number;

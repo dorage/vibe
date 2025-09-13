@@ -1,10 +1,10 @@
 import { render, screen } from "@testing-library/react";
 import { describe, expect, it } from "vitest";
-import Root from "./index";
+import MainPage from "./MainPage";
 
-describe("Root", () => {
+describe("MainPage", () => {
   it("must have h1", async () => {
-    render(<Root />);
+    render(<MainPage />);
 
     const item = await screen.findByText("React Capactior Boilerplate");
     expect(item.tagName).toEqual("H1");
